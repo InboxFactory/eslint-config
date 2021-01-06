@@ -13,5 +13,13 @@
     "no-empty": ["error", {"allowEmptyCatch": true}],
     "quotes": ["error", "single", {"allowTemplateLiterals": true}],
     "sort-imports": "error"
-  }
+  },
+  "overrides": [
+    {
+      "files": ["*.ts"],
+      "extends": ["plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint"],
+      "parser": "@typescript-eslint/parser",
+      "plugins": ["@typescript-eslint"]
+    }
+  ]
 }
