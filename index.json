@@ -20,6 +20,12 @@
       "extends": ["plugin:@typescript-eslint/recommended", "prettier/@typescript-eslint"],
       "parser": "@typescript-eslint/parser",
       "plugins": ["@typescript-eslint"]
+    },
+    {
+      "files": ["*.graphql"],
+      "parser": "@graphql-eslint/eslint-plugin",
+      "plugins": ["@graphql-eslint"],
+      "rules": {"prettier/prettier": "off"}
     }
   ]
 }
